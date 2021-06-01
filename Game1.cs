@@ -5,6 +5,7 @@ using Spymongus.Models;
 using Spymongus.Sprites;
 using Spymongus.Buttons;
 using System.Collections.Generic;
+using System;
 
 namespace Spymongus
 {
@@ -96,6 +97,23 @@ namespace Spymongus
                     startPos = new Vector2(ScreenWidth, (ScreenHeight / 2 ) - icebergTexture.Height / 2),
                 }
             };
+        }
+
+        //startGame
+        //get a role for the player
+        private void startGame()
+        {
+            Role role = new Role();
+            Random rndCrew = new Random();
+
+            for (int i = 0; i < role.crew.Length; i++)
+            {
+                rndCrew.Next(1);
+            }
+
+            Console.WriteLine(role);
+
+            //show crew menu (roles)
         }
 
         private void GoodMove_Click(object sender, System.EventArgs e)
