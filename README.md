@@ -1,5 +1,5 @@
 # Spymongus
 
-W for Up
-S for Down
-I for Iceberg to wreck u
+W for Up <br />
+S for Down <br />
+I for Iceberg to wreck u <br />
