@@ -69,11 +69,6 @@ namespace Spymongus
             base.Update(gameTime);
         }
 
-        internal void ChangeState(MenuState menuState)
-        {
-            throw new NotImplementedException();
-        }
-
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
