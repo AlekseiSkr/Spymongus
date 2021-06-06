@@ -7,11 +7,8 @@ using Microsoft.Xna.Framework.Input;
 
 namespace Spymongus.Buttons
 {
-    class Button : Component, ICloneable
+    public class Button : Component
     {
-
-        #region Fields
-
         private MouseState _currentMouse;
 
         private SpriteFont _font;
@@ -22,36 +19,25 @@ namespace Spymongus.Buttons
 
         private Texture2D _texture;
 
-        #endregion
-
-        #region Properties
-
         public event EventHandler Click;
-
         public bool Clicked { get; private set; }
-
         public Color PenColor { get; set; }
-        
         public Vector2 Position { get; set; }
 
         public Rectangle Rectangle
         {
             get
             {
-                return new Rectangle((int)Position.X, (int)Position.Y, _texture.Width, _texture.Height);
+                return new Rectangle((int)Position.X, (int)Position.Y, 195, 50);
             }
         }
 
         public string Text { get; set; }
 
-        #endregion
-
-        #region Methods
-        
-        public Button(Texture2D texture, SpriteFont spriteFont)
+        public Button(Texture2D texture, SpriteFont font)
         {
             _texture = texture;
-            _font = spriteFont;
+            _font = font;
             PenColor = Color.Black;
         }
 
@@ -94,12 +80,5 @@ namespace Spymongus.Buttons
                 }
             }
         }
-
-        public object Clone()
-        {
-            return this.MemberwiseClone();
-        }
-
-        #endregion
     }
 }
