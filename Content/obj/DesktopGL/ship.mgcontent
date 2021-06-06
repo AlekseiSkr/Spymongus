@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>E:/Repos/Spymongus/Spymongus/Content/ship.png</SourceFile>
-  <SourceTime>2021-05-23T19:54:47.1038922+02:00</SourceTime>
-  <DestFile>E:/Repos/Spymongus/Spymongus/Content/bin/DesktopGL/ship.xnb</DestFile>
-  <DestTime>2021-06-01T12:48:10.6777483+02:00</DestTime>
+  <SourceFile>C:/xampp/htdocs/Spymongus/Content/ship.png</SourceFile>
+  <SourceTime>2021-06-01T12:59:09.2364438+02:00</SourceTime>
+  <DestFile>C:/xampp/htdocs/Spymongus/Content/bin/DesktopGL/ship.xnb</DestFile>
+  <DestTime>2021-06-06T13:15:32.7003353+02:00</DestTime>
   <Importer>TextureImporter</Importer>
-  <ImporterTime>2020-08-10T16:17:54+02:00</ImporterTime>
+  <ImporterTime>2020-08-10T18:17:54+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
-  <ProcessorTime>2020-08-10T16:17:54+02:00</ProcessorTime>
+  <ProcessorTime>2020-08-10T18:17:54+02:00</ProcessorTime>
   <Parameters>
     <Key>ColorKeyColor</Key>
     <Value>255,0,255,255</Value>
