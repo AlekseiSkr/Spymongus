@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>E:/Repos/Spymongus/Spymongus/Content/ship.png</SourceFile>
-  <SourceTime>2021-05-23T19:54:47.1038922+02:00</SourceTime>
-  <DestFile>E:/Repos/Spymongus/Spymongus/Content/bin/DesktopGL/Content/ship.xnb</DestFile>
-  <DestTime>2021-06-01T12:48:03.3206813+02:00</DestTime>
+  <SourceFile>C:/Users/Sande/source/repos/Spymongus/Content/ship.png</SourceFile>
+  <SourceTime>2021-06-01T13:00:13.1387587+02:00</SourceTime>
+  <DestFile>C:/Users/Sande/source/repos/Spymongus/Content/bin/DesktopGL/Content/ship.xnb</DestFile>
+  <DestTime>2021-06-01T17:04:27.8955314+02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2020-08-10T16:17:54+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

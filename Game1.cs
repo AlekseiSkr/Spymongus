@@ -16,6 +16,12 @@ namespace Spymongus
         private Texture2D backGroundImage;
         private Texture2D icebergTexture;
 
+        private Texture2D _goodBtn;
+        private Texture2D _badBth;
+
+        private Texture2D _gameDisplay;
+
+        private SpriteFont _font;
 
         public static int ScreenWidth;
         public static int ScreenHeight;
@@ -59,18 +65,26 @@ namespace Spymongus
             var shipTexture = Content.Load<Texture2D>("ship");
             icebergTexture = Content.Load<Texture2D>("iceberg");
 
+            _goodBtn = Content.Load<Texture2D>("Controls/ButtonGood");
+
+            _badBth = Content.Load<Texture2D>("Controls/ButtonBad");
+
+            _font = Content.Load<SpriteFont>("Fonts/Font");
+
+            _gameDisplay = Content.Load<Texture2D>("displayMove");
+
             //button 1 initiation
-            var goodMove = new Button(Content.Load<Texture2D>("Controls/Button"), Content.Load<SpriteFont>("Fonts/Font"))
+            var goodMove = new Button(_goodBtn, _font)
             {
-                Position = new Vector2(ScreenWidth / 2, ScreenHeight / 4),
-                Text = "Good Decision"
+                Position = new Vector2(250, 250),
+                //Text = "Good Decision"
             };
             
             //button 2 initiation
-            var badMove = new Button(Content.Load<Texture2D>("Controls/Button"), Content.Load<SpriteFont>("Fonts/Font"))
+            var badMove = new Button(_badBth, _font)
             {
                 Position = new Vector2(ScreenWidth / 2, (ScreenHeight / 4) + 100),
-                Text = "Bad Decision"
+                //Text = "Bad Decision"
             };
 
             //buttons added to list

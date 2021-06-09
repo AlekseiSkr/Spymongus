@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>E:/Repos/Spymongus/Spymongus/Content/Controls/Button.png</SourceFile>
-  <SourceTime>2021-05-23T23:17:24.3211704+02:00</SourceTime>
-  <DestFile>E:/Repos/Spymongus/Spymongus/Content/bin/DesktopGL/Content/Controls/Button.xnb</DestFile>
-  <DestTime>2021-06-01T12:48:03.2916804+02:00</DestTime>
+  <SourceFile>C:/Users/Sande/source/repos/Spymongus/Content/Controls/Button.png</SourceFile>
+  <SourceTime>2021-06-01T13:00:13.1127573+02:00</SourceTime>
+  <DestFile>C:/Users/Sande/source/repos/Spymongus/Content/bin/DesktopGL/Content/Controls/Button.xnb</DestFile>
+  <DestTime>2021-06-01T17:04:27.7414486+02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2020-08-10T16:17:54+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
