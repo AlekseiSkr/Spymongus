@@ -353,3 +353,5 @@ Content/obj/DesktopGL/Content/iceberg.mgcontent
 Content/obj/DesktopGL/Content/Fonts/Font.mgcontent
 Content/obj/DesktopGL/Content/Controls/Button.mgcontent
 *.mgcontent
+*.dll
+*.pdb
