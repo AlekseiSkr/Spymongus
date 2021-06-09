@@ -12,6 +12,7 @@ namespace Spymongus.State
     {
         private List<ButtonGame> _components;
         private Texture2D bcGrd;
+        private Texture2D displaymove;
 
         public GameState(Game1 game, GraphicsDevice graphicsDevice, ContentManager content) : base(game, graphicsDevice, content)
         {
@@ -22,7 +23,7 @@ namespace Spymongus.State
 
             var ballTexture = _content.Load<Texture2D>("ship");
 
-            var displaymove = _content.Load<Texture2D>("displayMove");
+            displaymove = _content.Load<Texture2D>("displayMove");
 
             var roundLabel = _content.Load<Texture2D>("RoundLabel");
 
@@ -80,6 +81,8 @@ namespace Spymongus.State
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
             spriteBatch.Draw(bcGrd, new Rectangle(0, 0, 800, 600), Color.White);
+
+            spriteBatch.Draw(displaymove, new Rectangle(250, 250, 120, 500), Color.White);
             foreach (var component in _components)
             {
                 component.Draw(gameTime, spriteBatch);
