@@ -15,7 +15,7 @@ namespace Spymongus.State
 
         public GameState(Game1 game, GraphicsDevice graphicsDevice, ContentManager content) : base(game, graphicsDevice, content)
         {
-            var bcGrd = _content.Load<Texture2D>("backGroundGame");
+            bcGrd = _content.Load<Texture2D>("backGroundGame");
 
             var badButton = _content.Load<Texture2D>("Controls/ButtonBad");
             var goodButton = _content.Load<Texture2D>("Controls/ButtonGood");
