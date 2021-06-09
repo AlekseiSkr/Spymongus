@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Spymongus.State
 {
-    class EndState : State
+    public class EndState : State
     {
         private List<Buttons.Component> _components;
 
