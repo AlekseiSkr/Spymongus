@@ -13,6 +13,8 @@ namespace Spymongus.State
         private List<Buttons.Component> _components;
         private Texture2D bcGrd;
         private Texture2D displaymove;
+        private Texture2D roundLabel;
+
 
         public GameState(Game1 game, GraphicsDevice graphicsDevice, ContentManager content) : base(game, graphicsDevice, content)
         {
@@ -25,14 +27,13 @@ namespace Spymongus.State
 
             displaymove = _content.Load<Texture2D>("displayMove");
 
-            var roundLabel = _content.Load<Texture2D>("RoundLabel");
+            roundLabel = _content.Load<Texture2D>("RoundLabel");
 
             var _font = _content.Load<SpriteFont>("Fonts/Font");
 
             var newBadButton = new ButtonGame(badButton, _font)
             {
                 Position = new Vector2(635, 430),
-                Text = "Bad Button",
             };
 
             newBadButton.Click += BadDecision_Click;
@@ -40,7 +41,6 @@ namespace Spymongus.State
             var newGoodButton = new ButtonGame(goodButton, _font)
             {
                 Position = new Vector2(520, 430),
-                Text = "Good Button",
             };
 
             newGoodButton.Click += GoodDecision_Click;
@@ -81,6 +81,8 @@ namespace Spymongus.State
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
             spriteBatch.Draw(bcGrd, new Rectangle(-4, -5, 810, 610), Color.White);
+
+            spriteBatch.Draw(roundLabel, new Rectangle(10, 10, 100, 35), Color.White);
 
             spriteBatch.Draw(displaymove, new Rectangle(25, 425, 750, 160), Color.White);
             foreach (var component in _components)
