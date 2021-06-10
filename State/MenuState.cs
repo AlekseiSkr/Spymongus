@@ -53,10 +53,9 @@ namespace Spymongus.State
         {
             _game.Exit();
         }
-
         private void LoadGameButton_Click(object sender, EventArgs e)
         {
-            Console.WriteLine("Load Game");
+            _game.ChangeState(new GameState(_game, _graphicsDevice,_content));
         }
 
         private void NewGameButton_Click(object sender, EventArgs e)

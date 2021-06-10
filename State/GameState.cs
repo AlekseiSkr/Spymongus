@@ -10,7 +10,7 @@ namespace Spymongus.State
 {
     class GameState : State
     {
-        private List<ButtonGame> _components;
+        private List<Buttons.Component> _components;
         private Texture2D bcGrd;
         private Texture2D displaymove;
 
@@ -31,7 +31,7 @@ namespace Spymongus.State
 
             var newBadButton = new ButtonGame(badButton, _font)
             {
-                Position = new Vector2(300, 300),
+                Position = new Vector2(635, 430),
                 Text = "Bad Button",
             };
 
@@ -39,7 +39,7 @@ namespace Spymongus.State
 
             var newGoodButton = new ButtonGame(goodButton, _font)
             {
-                Position = new Vector2(300, 300),
+                Position = new Vector2(520, 430),
                 Text = "Good Button",
             };
 
@@ -80,9 +80,9 @@ namespace Spymongus.State
 
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(bcGrd, new Rectangle(0, 0, 800, 600), Color.White);
+            spriteBatch.Draw(bcGrd, new Rectangle(-4, -5, 810, 610), Color.White);
 
-            spriteBatch.Draw(displaymove, new Rectangle(250, 250, 120, 500), Color.White);
+            spriteBatch.Draw(displaymove, new Rectangle(25, 425, 750, 160), Color.White);
             foreach (var component in _components)
             {
                 component.Draw(gameTime, spriteBatch);
