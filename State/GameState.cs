@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using Spymongus.Buttons;
+using Spymongus.Sprites;
 
 namespace Spymongus.State
 {
@@ -18,7 +19,11 @@ namespace Spymongus.State
         private Texture2D shipTexture;
         private Texture2D icebergTexture;
 
-        public GameState(Game1 game, GraphicsDevice graphicsDevice, ContentManager content) : base(game, graphicsDevice, content)
+        public static int ScreenWidth;
+        public static int ScreenHeight;
+
+        //private SpriteBatch _sprites;
+        public GameState(Game1 game, GraphicsDevice graphicsDevice, ContentManager content, Sprite sprite) : base(game, graphicsDevice, content, sprite)
         {
             bcGrd = _content.Load<Texture2D>("backGroundGame");
 
@@ -52,6 +57,23 @@ namespace Spymongus.State
             {
                 newBadButton,
                 newGoodButton,
+            };
+
+            var sprites = new List<Sprite>()
+            {
+                //new Ship Sprite
+                new Ship(shipTexture)
+                {
+                    Position = new Vector2(ScreenWidth / 5, ScreenHeight / 2),
+                    Origin = new Vector2(shipTexture.Width/2, (int)shipTexture.Height/ 2),
+                },
+
+                //new Iceberg Sprite
+                new Iceberg(icebergTexture)
+                {
+                    Position = new Vector2(ScreenWidth, (ScreenHeight / 2 ) - icebergTexture.Height / 2),
+                    startPos = new Vector2(ScreenWidth, (ScreenHeight / 2 ) - icebergTexture.Height / 2),
+                }
             };
         }
 
