@@ -18,7 +18,7 @@ namespace Spymongus.State
         public abstract void LoadContent();
         public abstract void Draw(GameTime gameTime, SpriteBatch spriteBatch);
         public abstract void PostUpdate(GameTime gameTime);
-        public State(Game1 game, GraphicsDevice graphicsDevice, ContentManager content, Sprite sprite)
+        public State(Game1 game, GraphicsDevice graphicsDevice, ContentManager content)
         {
             _game = game;
 
@@ -26,7 +26,6 @@ namespace Spymongus.State
 
             _content = content;
 
-            _sprite = sprite;
         }
         public abstract void Update(GameTime gameTime);
     }

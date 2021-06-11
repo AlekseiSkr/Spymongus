@@ -12,23 +12,28 @@ namespace Spymongus.State
     class GameState : State
     {
         private List<Buttons.Component> _components;
+        private List<Sprites.Sprite> _sprite;
+
         private Texture2D bcGrd;
         private Texture2D displaymove;
         private Texture2D roundLabel;
 
         private Texture2D shipTexture;
         private Texture2D icebergTexture;
+        private Texture2D defaultNode;
 
         public static int ScreenWidth;
         public static int ScreenHeight;
 
         //private SpriteBatch _sprites;
-        public GameState(Game1 game, GraphicsDevice graphicsDevice, ContentManager content, Sprite sprite) : base(game, graphicsDevice, content, sprite)
+        public GameState(Game1 game, GraphicsDevice graphicsDevice, ContentManager content) : base(game, graphicsDevice, content)
         {
             bcGrd = _content.Load<Texture2D>("backGroundGame");
 
             var badButton = _content.Load<Texture2D>("Controls/ButtonBad");
             var goodButton = _content.Load<Texture2D>("Controls/ButtonGood");
+
+            defaultNode = _content.Load<Texture2D>("DecisionNodes/DefaultDecision");
 
             shipTexture = _content.Load<Texture2D>("ship");
             icebergTexture = _content.Load<Texture2D>("iceberg");
@@ -59,7 +64,7 @@ namespace Spymongus.State
                 newGoodButton,
             };
 
-            var sprites = new List<Sprite>()
+            _sprite = new List<Sprite>()
             {
                 //new Ship Sprite
                 new Ship(shipTexture)

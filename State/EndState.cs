@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
+using Spymongus.Sprites;
 using System;
 using System.Collections.Generic;
 using System.Text;

@@ -2,6 +2,7 @@
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Spymongus.Buttons;
+using Spymongus.Sprites;
 using Spymongus.State;
 using System;
 using System.Collections.Generic;

@@ -18,7 +18,6 @@ namespace Spymongus
         private State.State _currentState;
         private State.State _nextState;
 
-
         int screenWidth = 800, screenHeight = 600;
 
         public void ChangeState(State.State state)
