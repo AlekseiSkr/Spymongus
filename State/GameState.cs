@@ -15,6 +15,8 @@ namespace Spymongus.State
         private Texture2D displaymove;
         private Texture2D roundLabel;
 
+        private Texture2D shipTexture;
+        private Texture2D icebergTexture;
 
         public GameState(Game1 game, GraphicsDevice graphicsDevice, ContentManager content) : base(game, graphicsDevice, content)
         {
@@ -23,7 +25,8 @@ namespace Spymongus.State
             var badButton = _content.Load<Texture2D>("Controls/ButtonBad");
             var goodButton = _content.Load<Texture2D>("Controls/ButtonGood");
 
-            var ballTexture = _content.Load<Texture2D>("ship");
+            shipTexture = _content.Load<Texture2D>("ship");
+            icebergTexture = _content.Load<Texture2D>("iceberg");
 
             displaymove = _content.Load<Texture2D>("displayMove");
 
