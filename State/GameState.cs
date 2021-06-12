@@ -21,6 +21,7 @@ namespace Spymongus.State
         private Texture2D shipTexture;
         private Texture2D icebergTexture;
         private Texture2D defaultNode;
+        private Texture2D endNode;
 
         public static int ScreenWidth;
         public static int ScreenHeight;
@@ -34,6 +35,7 @@ namespace Spymongus.State
             var goodButton = _content.Load<Texture2D>("Controls/ButtonGood");
 
             defaultNode = _content.Load<Texture2D>("DecisionNodes/DefaultDecision");
+            endNode = _content.Load<Texture2D>("DecisionNodes/endNode");
 
             shipTexture = _content.Load<Texture2D>("ship");
             icebergTexture = _content.Load<Texture2D>("iceberg");
@@ -78,8 +80,15 @@ namespace Spymongus.State
                 {
                     Position = new Vector2(ScreenWidth, (ScreenHeight / 2 ) - icebergTexture.Height / 2),
                     startPos = new Vector2(ScreenWidth, (ScreenHeight / 2 ) - icebergTexture.Height / 2),
+                },
+
+                new Node(defaultNode)
+                {
+                    Position = new Vector2( 200, 200)
                 }
             };
+
+
         }
 
         private void BadDecision_Click(object sender, EventArgs e)
@@ -99,6 +108,9 @@ namespace Spymongus.State
 
         public override void Update(GameTime gameTime)
         {
+            foreach (var sprite in _sprite)
+                sprite.Update(gameTime, _sprite);
+
             foreach (var component in _components)
                 component.Update(gameTime);
         }
@@ -115,6 +127,9 @@ namespace Spymongus.State
             spriteBatch.Draw(roundLabel, new Rectangle(10, 10, 100, 35), Color.White);
 
             spriteBatch.Draw(displaymove, new Rectangle(25, 425, 750, 160), Color.White);
+
+            spriteBatch.Draw(defaultNode, new Rectangle(200, 200, 50, 50), Color.White);
+
             foreach (var component in _components)
             {
                 component.Draw(gameTime, spriteBatch);
