@@ -84,7 +84,7 @@ namespace Spymongus.State
 
                 new Node(defaultNode)
                 {
-                    Position = new Vector2( 200, 200)
+                    Position = new Vector2( 200, 350)
                 }
             };
 
@@ -126,9 +126,12 @@ namespace Spymongus.State
 
             spriteBatch.Draw(roundLabel, new Rectangle(10, 10, 100, 35), Color.White);
 
-            spriteBatch.Draw(displaymove, new Rectangle(25, 425, 750, 160), Color.White);
+            spriteBatch.Draw(displaymove, new Rectangle(160, 415, 625, 170), Color.White);
 
-            spriteBatch.Draw(defaultNode, new Rectangle(200, 200, 50, 50), Color.White);
+            foreach (var sprite in _sprite)
+            {
+                sprite.Draw(gameTime, spriteBatch);
+            }
 
             foreach (var component in _components)
             {
