@@ -350,3 +350,11 @@ MigrationBackup/
 .ionide/
 *.cache
 *.mgcontent
+bin/Debug/netcoreapp3.1/Spymongus.dll
+bin/Debug/netcoreapp3.1/Spymongus.pdb
+bin/Debug/netcoreapp3.1/Spymongus.runtimeconfig.dev.json
+Content/obj/DesktopGL/Content/Controls/Button.mgcontent
+Content/obj/DesktopGL/Content/Fonts/Font.mgcontent
+Content/obj/DesktopGL/Content/iceberg.mgcontent
+Content/obj/DesktopGL/Content/ship.mgcontent
+obj/Debug/netcoreapp3.1/Spymongus.assets.cache
