@@ -28,6 +28,8 @@ namespace Spymongus.Sprites
 
         public Texture2D _texture;
 
+
+
         public Sprite(Texture2D texture)
         {
             _texture = texture;

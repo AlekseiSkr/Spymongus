@@ -100,14 +100,12 @@ namespace Spymongus.State
             {
                 Position = new Vector2(635, 430),
             };
-
             newBadButton.Click += BadDecision_Click;
 
             var newGoodButton = new ButtonGame(goodButton, _font)
             {
                 Position = new Vector2(520, 430),
             };
-
             newGoodButton.Click += GoodDecision_Click;
 
             _crewButtons = new List<Component>()
@@ -119,6 +117,7 @@ namespace Spymongus.State
                 crewButton5,
                 crewButton6,
             };
+
             _components = new List<Component>()
             {
                 newBadButton,
@@ -143,37 +142,41 @@ namespace Spymongus.State
 
                 new Node(defaultNode)
                 {
-                    Position = new Vector2( 200, 350)
+                    Position = new Vector2( 225, 440),
                 },
+
+                new Node(endNode)
+                {
+                    Position = new Vector2( 275, 440),
+                    
+                }
             };
-
-
         }
 
         private void crewButton1_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
         private void crewButton2_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
         private void crewButton3_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
         private void crewButton4_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
 
         private void crewButton5_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
         private void crewButton6_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
         private void BadDecision_Click(object sender, EventArgs e)
         {

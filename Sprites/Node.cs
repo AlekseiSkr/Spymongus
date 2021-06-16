@@ -9,16 +9,29 @@ namespace Spymongus.Sprites
     class Node : Sprite
     {
         //private int node;
-
         public Node(Texture2D texture) : base (texture)
         {
             
         }
+
         public override void Update(GameTime gameTime, List<Sprite> sprites)
         {
             
         }
 
+        public void loopNodes()
+        { 
+
+        }
+
+
+        public Rectangle Rectangle
+        {
+            get
+            {
+                return new Rectangle((int)Position.X, (int)Position.Y, 50, 50);
+            }
+        }
         //public defaultNodes()
         //{          
         //    for (int x = 0; x < node; x++)
