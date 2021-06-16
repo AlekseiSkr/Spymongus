@@ -42,7 +42,7 @@ namespace Spymongus.State
             var badButton = _content.Load<Texture2D>("Controls/ButtonBad");
             var goodButton = _content.Load<Texture2D>("Controls/ButtonGood");
 
-            defaultNode = _content.Load<Texture2D>("DecisionNodes/DefaultDecision");
+            defaultNode = _content.Load<Texture2D>("DecisionNodes/defaultNode");
             endNode = _content.Load<Texture2D>("DecisionNodes/endNode");
 
             shipTexture = _content.Load<Texture2D>("ship");

@@ -121,7 +121,7 @@
 /processorParam:TextureFormat=Color
 /build:DEATH.png
 
-#begin DecisionNodes/DefaultDecision.png
+#begin DecisionNodes/defaultNode.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -131,7 +131,7 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:DecisionNodes/DefaultDecision.png
+/build:DecisionNodes/defaultNode.png
 
 #begin DecisionNodes/endNode.png
 /importer:TextureImporter
@@ -145,7 +145,7 @@
 /processorParam:TextureFormat=Color
 /build:DecisionNodes/endNode.png
 
-#begin DecisionNodes/GreenDecision.png
+#begin DecisionNodes/greenNode.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -155,9 +155,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:DecisionNodes/GreenDecision.png
+/build:DecisionNodes/greenNode.png
 
-#begin DecisionNodes/RedDecision.png
+#begin DecisionNodes/redNode.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -167,7 +167,7 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:DecisionNodes/RedDecision.png
+/build:DecisionNodes/redNode.png
 
 #begin displayMove.png
 /importer:TextureImporter
