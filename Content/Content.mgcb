@@ -49,6 +49,18 @@
 /processorParam:TextureFormat=Color
 /build:Controls/ButtonBad.png
 
+#begin Controls/Crew.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Controls/Crew.png
+
 #begin Controls/ButtonGood.png
 /importer:TextureImporter
 /processor:TextureProcessor

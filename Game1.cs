@@ -75,7 +75,7 @@ namespace Spymongus
 
             _gameDisplay = Content.Load<Texture2D>("displayMove");
 
-            _menu = Content.Load<Texture2D>("Controls/Button");
+            _menu = Content.Load<Texture2D>("Controls/Crew");
 
             //button 1 initiation
             var goodMove = new Button(_goodBtn, _font)
