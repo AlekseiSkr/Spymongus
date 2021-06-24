@@ -19,6 +19,8 @@ namespace Spymongus
         private Texture2D _goodBtn;
         private Texture2D _badBth;
 
+        private Texture2D _menu;
+
         private Texture2D _gameDisplay;
 
         private SpriteFont _font;
@@ -73,6 +75,8 @@ namespace Spymongus
 
             _gameDisplay = Content.Load<Texture2D>("displayMove");
 
+            _menu = Content.Load<Texture2D>("Controls/Button");
+
             //button 1 initiation
             var goodMove = new Button(_goodBtn, _font)
             {
@@ -87,11 +91,20 @@ namespace Spymongus
                 //Text = "Bad Decision"
             };
 
+            //menu initiation
+            var menu = new Button(_menu, _font)
+            {
+                Position = new Vector2(ScreenWidth / 10, (ScreenHeight / 4) + 200),
+                //Text = "Crew"
+
+            };
+
             //buttons added to list
             _gameComponents = new List<Component>()
             {
                 goodMove,
                 badMove,
+                menu,
             };
             
             _sprites = new List<Sprite>()
